@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ResetPass">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_arrow_back3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="18dp"
+            android:src="@drawable/arrow_back"
+            app:layout_constraintBottom_toTopOf="@id/tv_resetpass3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <TextView
+            android:id="@+id/tv_resetpass3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="23dp"
+            android:text="Reset Password"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/iv_arrow_back3"/>
+        <TextView
+            android:id="@+id/tv_comment3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="11dp"
+            android:text="Please enter your new password."
+            android:textSize="16dp"
+            android:textColor="#918F8F"
+            app:layout_constraintTop_toBottomOf="@+id/tv_resetpass3"/>
+        <TextView
+            android:id="@+id/tv_newpass3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Password"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="55dp"
+            android:textSize="20dp"
+            android:textColor="@color/dark_gray"
+            app:layout_constraintTop_toBottomOf="@+id/tv_comment3"/>
+
+        <LinearLayout
+            android:id="@+id/ll_newpass3"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:background="@drawable/et_bg"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_newpass3"
+            >
+
+            <EditText
+                android:id="@+id/et_newpass3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="Enter your password"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyz&amp;@#$%^+=ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:longClickable="false"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:minHeight="48dp"
+                android:paddingLeft="10dp" />
+            <ImageView
+                android:id="@+id/iv_visible3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/eye"
+                android:clickable="true"/>
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/val_newpass3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:textColor="#f00"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            app:layout_constraintTop_toBottomOf="@+id/ll_newpass3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+        <TextView
+            android:id="@+id/tv_conpass3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textColor="@color/dark_gray"
+            app:layout_constraintTop_toBottomOf="@+id/ll_newpass3"/>
+
+        <LinearLayout
+            android:id="@+id/ll_conpass3"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:background="@drawable/et_bg"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_conpass3"
+            >
+
+            <EditText
+                android:id="@+id/et_conpass3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="Enter your password"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyz&amp;@#$%^+=ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:longClickable="false"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:minHeight="48dp"
+                android:paddingLeft="10dp" />
+            <ImageView
+                android:id="@+id/iv_convisible3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/eye"
+                android:clickable="true"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/val_conpass3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:textColor="#f00"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            app:layout_constraintTop_toBottomOf="@+id/ll_conpass3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_submit3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="57dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/btn_bg"
+            android:text="Submit"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/val_conpass3"
+            tools:layout_editor_absoluteX="24dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

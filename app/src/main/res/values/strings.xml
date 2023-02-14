@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Exobe</string>
+    <string name="forgot"><u>Forgot password?</u></string>
+<!--    <string name="register" tools:ignore="StringEscaping">Don't have an account? <font color="#">Register</font></string>-->
+    <string name="already" tools:ignore="StringEscaping">Already have an account? <u>Login</u></string>
+
+</resources>
